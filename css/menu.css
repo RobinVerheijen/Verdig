@@ -10,15 +10,14 @@
 }
 .ca-menu{
     position: absolute;
-    width: 800px;
+    width: 50%;
     left: 0;
     right: 0;
     margin: 0 auto;
-    margin-top: 30px;
-
+    margin-top: 80px;
 }
 .ca-menu li{
-    width: 200px;
+    width:25%;
     height: 100px;
     overflow: hidden;
     position: relative;
@@ -98,68 +97,10 @@
 .ca-menu li:hover .ca-icon{
     text-shadow: 0px 0px 20px #c5e4f4;
     color: transparent;
-    //-webkit-animation: moveFromTop 400ms ease;
-    //-moz-animation: moveFromTop 400ms ease;
-    //-ms-animation: moveFromTop 400ms ease;
 }
 .ca-menu li:hover .ca-main{
     color: #000;
-    //-webkit-animation: moveFromTop 300ms ease;
-    //-moz-animation: moveFromTop 300ms ease;
-    //-ms-animation: moveFromTop 300ms ease;
 }
 .ca-menu li:hover .ca-sub{
     color: #000;
-    //-webkit-animation: moveFromBottom 500ms ease;
-    //-moz-animation: moveFromBottom 500ms ease;
-    //-ms-animation: moveFromBottom 500ms ease;
-}
-@-webkit-keyframes moveFromTop {
-    from {
-        -webkit-transform: translateY(-300%);
-    }
-    to {
-        -webkit-transform: translateY(0%);
-    }
-}
-@-moz-keyframes moveFromTop {
-    from {
-        -moz-transform: translateY(-300%);
-    }
-    to {
-        -moz-transform: translateY(0%);
-    }
-}
-@-ms-keyframes moveFromTop {
-    from {
-        -ms-transform: translateY(-300%);
-    }
-    to {
-        -ms-transform: translateY(0%);
-    }
-}
-
-@-webkit-keyframes moveFromBottom {
-    from {
-        -webkit-transform: translateY(200%);
-    }
-    to {
-        -webkit-transform: translateY(0%);
-    }
-}
-@-moz-keyframes moveFromBottom {
-    from {
-        -moz-transform: translateY(200%);
-    }
-    to {
-        -moz-transform: translateY(0%);
-    }
-}
-@-ms-keyframes moveFromBottom {
-    from {
-        -ms-transform: translateY(200%);
-    }
-    to {
-        -ms-transform: translateY(0%);
-    }
 }

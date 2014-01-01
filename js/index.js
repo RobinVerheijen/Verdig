@@ -4,13 +4,11 @@ $(document).ready(function() {
 
     $('.window').width(windowWidth);
     $('.window').height(windowHeight);
-
-    $("#menu").sticky({topSpacing:0});
-
+    
     $('.window').windows({
         snapping: true,
         snapSpeed: 300,
-        snapInterval: 200,
+        snapInterval: 200
 //        onScroll: function(scrollPos) {
 //            // scrollPos:Number
 //        },
@@ -21,6 +19,4 @@ $(document).ready(function() {
 //            // when new window ($el) enters viewport
 //        }
     });
-
-    $('#menu').sticky();
 });
