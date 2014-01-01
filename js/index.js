@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     $('.window').width(windowWidth);
     $('.window').height(windowHeight);
-    
+
     $('.window').windows({
         snapping: true,
         snapSpeed: 300,
@@ -19,4 +19,10 @@ $(document).ready(function() {
 //            // when new window ($el) enters viewport
 //        }
     });
+});
+
+$document.scroll(function() {
+  if ($document.scrollTop() >= 100) {
+    // alter menu
+  }
 });
