@@ -21,8 +21,12 @@ $(document).ready(function() {
     });
 });
 
-$document.scroll(function() {
-  if ($document.scrollTop() >= 100) {
-    // alter menu
+$(document).scroll(function() {
+  if ($(document).scrollTop() >= 80) {
+      $(".ca-menu").removeClass("normal");
+      $(".ca-menu").addClass("full");
+  } else {
+      $(".ca-menu").removeClass("full");
+      $(".ca-menu").addClass("normal");
   }
 });
