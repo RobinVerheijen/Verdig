@@ -5,10 +5,10 @@ $(document).ready(function() {
     $('.window').width(windowWidth);
     $('.window').height(windowHeight);
 
-    $('.window').windows({
-        snapping: true,
-        snapSpeed: 200,
-        snapInterval: 300
+//    $('.window').windows({
+//        snapping: true,
+//        snapSpeed: 200,
+//        snapInterval: 300
 //        onScroll: function(scrollPos) {
 //            // scrollPos:Number
 //        },
@@ -18,7 +18,7 @@ $(document).ready(function() {
 //        onWindowEnter: function($el) {
 //            // when new window ($el) enters viewport
 //        }
-    });
+//    });
 });
 
 $(document).scroll(function() {
