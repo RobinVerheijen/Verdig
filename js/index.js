@@ -7,8 +7,8 @@ $(document).ready(function() {
 
     $('.window').windows({
         snapping: true,
-        snapSpeed: 300,
-        snapInterval: 200
+        snapSpeed: 200,
+        snapInterval: 300
 //        onScroll: function(scrollPos) {
 //            // scrollPos:Number
 //        },
@@ -23,10 +23,10 @@ $(document).ready(function() {
 
 $(document).scroll(function() {
   if ($(document).scrollTop() >= 80) {
-      $(".ca-menu").removeClass("normal");
       $(".ca-menu").addClass("full");
+      $("#menu-container").css("position", "fixed");
   } else {
+      $("#menu-container").css("position", "absolute");
       $(".ca-menu").removeClass("full");
-      $(".ca-menu").addClass("normal");
   }
 });
