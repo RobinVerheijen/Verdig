@@ -6,6 +6,7 @@ body {
 }
 #logo {
     background: url(../img/logo.png) no-repeat center;
+    background-size: 75%;
 }
 #what-we-do {
     background-color: rgb(248, 242, 194);
