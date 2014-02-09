@@ -53,9 +53,9 @@ body {
 }
 
 #fullPage-nav span {
-    border-color: #fff !important;
+    border-color: #333 !important;
 }
 
 #fullPage-nav li .active span {
-    background: #fff !important;
+    background: #333 !important;
 }
