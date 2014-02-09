@@ -4,23 +4,13 @@ var windowHeight;
 $(document).ready(function() {
     windowWidth = $(window).width();
     windowHeight = $(window).height();
-
-    $('.window').width(windowWidth);
-    $('.window').height(windowHeight);
-
-    $('.window').windows({
-        snapping: true,
-        snapSpeed: 200,
-        snapInterval: 400
-//        onScroll: function(scrollPos) {
-//            // scrollPos:Number
-//        },
-//        onSnapComplete: function($el) {
-//            // after window ($el) snaps into place
-//        },
-//        onWindowEnter: function($el) {
-//            // when new window ($el) enters viewport
-//        }
+    
+    $.fn.fullpage({
+        slidesColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+        anchors: ['what-we-do', 'who-we-are', 'portfolio', 'contact'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Wat doen wij', 'Wie zijn wij', 'Portfolio', 'Contact']
     });
 });
 
