@@ -4,7 +4,7 @@ $(document).ready(function() {
         anchors: ['what-we-do', 'who-we-are', 'portfolio', 'contact'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Wat doen wij', 'Wie zijn wij', 'Portfolio', 'Contact']
+//        navigationTooltips: ['Wat doen wij', 'Wie zijn wij', 'Portfolio', 'Contact']
     });
 });
 
