@@ -1,6 +1,5 @@
 $(document).ready(function() {
     $.fn.fullpage({
-        slidesColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
         anchors: ['what-we-do', 'who-we-are', 'portfolio', 'contact'],
         navigation: true,
         navigationPosition: 'right',

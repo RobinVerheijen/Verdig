@@ -4,20 +4,43 @@ body {
     margin: 0;
 /*    background: url(../img/background_city.jpg);*/
 }
-.logoimage {
+
+.device-image {
     position: absolute;
-    width: 50%;
-    height: auto;
+}
+#imac-image {
     right: 0;
+    bottom: 0;
     left: 0;
     margin: 0 auto;
-    top: 0;
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    max-height: 80%;
+}
+#iphone-image {
+    bottom: 0;
+    left: 15%;
+    margin: 0 auto;
+    width: auto;
+    max-width: 25%;
+    height: auto;
+    max-height: 50%;
+}
+#ipad-image {
+    bottom: 4%;
+    left: 74%;
+    margin: 0 auto;
+    width: auto;
+    max-width: 40%;
+    height: auto;
+    max-height: 60%;
 }
 .section {
     background-size: cover;
 }
 #what-we-do-section {
-    background-image: url(../images/background_new.jpeg);
+    /*background-image: url(../images/background_new.jpeg);*/
 }
 #who-we-are-section {
     
