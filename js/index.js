@@ -6,6 +6,7 @@ $(document).ready(function() {
     windowHeight = $(window).height();
     
     $.fn.fullpage({
+//        verticalCentered: false,
         slidesColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
         anchors: ['what-we-do', 'who-we-are', 'portfolio', 'contact'],
         navigation: true,
