@@ -28,3 +28,11 @@ body {
 #contact-section {
     
 }
+
+#fullPage-nav span {
+    border-color: #fff !important;
+}
+
+#fullPage-nav li .active span {
+    background: #fff !important;
+}
