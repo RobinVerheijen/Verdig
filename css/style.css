@@ -1,11 +1,27 @@
+@font-face
+{
+    font-family: Matchbook;
+    src: url(../fonts/Matchbook_Serif.ttf);
+}
 body {
-    font-family: "lobster";
+    font-family: "Matchbook";
     padding: 0;
     margin: 0;
 /*    background: url(../img/background_city.jpg);*/
 }
-
-.device-image {
+#device-showcase {
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+/*.device-image {
     position: absolute;
 }
 .device-image:hover {
@@ -38,7 +54,7 @@ body {
     max-width: 40%;
     height: auto;
     max-height: 40%;
-}
+}*/
 .section {
     background-size: cover;
 }
