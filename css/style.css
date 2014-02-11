@@ -31,6 +31,10 @@ body {
 }*/
 .device-image {
     position: absolute;
+    transition-delay: 0s;
+    transition-duration: 0.7s;
+    transition-property: all;
+    transition-timing-function: ease-out;
 }
 .device-image:hover {
     cursor: pointer;
@@ -47,21 +51,28 @@ body {
 }
 #iphone-image {
     bottom: 5%;
-    left: 10%;
+    left: 25%;
     margin: 0 auto;
     width: auto;
     max-width: 40%;
     height: auto;
     max-height: 40%;
 }
+
+#iphone-image.active {
+    left: 10%;
+}
 #ipad-image {
     bottom: 7%;
-    left: 65%;
+    right: 25%;
     margin: 0 auto;
     width: auto;
     max-width: 40%;
     height: auto;
     max-height: 40%;
+}
+#ipad-image.active {
+    right: 10%;
 }
 .section {
     background-size: cover;
@@ -130,6 +141,10 @@ to {bottom:0px;}
     top: 40%;
     bottom: 0;
     margin: 0 auto;
+    transition-delay: 0s;
+    transition-duration: 0.7s;
+    transition-property: all;
+    transition-timing-function: ease-out;
 /*    width: 300px;
     height: 300px;
     -webkit-border-radius: 150px;
@@ -141,11 +156,16 @@ to {bottom:0px;}
 
 #saron {
     /*background: url(../images/saron.jpg) no-repeat;*/
+    left: 0%;
+}
+#saron.active {
     left: 20%;
 }
-
 #robin {
     /*background: url(../images/robin.jpg) no-repeat;*/
+    right: 0%;
+}
+#robin.active {
     right: 20%;
 }
 
@@ -215,4 +235,5 @@ to {bottom:0px;}
 
 .who-are-we-name {
     text-align: center;
+    font-weight: 100;
 }

@@ -3,7 +3,18 @@ $(document).ready(function() {
         anchors: ['home', 'what-we-do', 'who-we-are', 'portfolio', 'contact'],
         navigation: true,
         navigationPosition: 'right',
-        slidesNavigation: false
+        slidesNavigation: false,
+        'afterLoad': function(anchorLink, index) {
+            if(index == 1) {
+                $('#logo').addClass('active');
+            } else if (index == 2) {
+                $('#iphone-image, #ipad-image').addClass('active');
+            } else if(index == 3 ) {
+                $('#saron, #robin').addClass('active');
+            }
+//            $('#infoMenu').toggleClass('whiteLinks', index == 4);
+
+        }
 //        navigationTooltips: ['Wat doen wij', 'Wie zijn wij', 'Portfolio', 'Contact']
     });
     
