@@ -117,3 +117,38 @@ to {bottom: 0px;}
     from {bottom:10px;}
 to {bottom:0px;}
 }
+
+#who-we-are-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#who-we-are-right {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.who-we-are-image {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(http://link-to-your/image.jpg) no-repeat;
+}
+
+#saron {
+    background: url(../images/saron.jpg) no-repeat;
+    left: 15%;
+}
+
+#robin {
+    background: url(../images/robin.jpg) no-repeat;
+    right: 15%;
+}
