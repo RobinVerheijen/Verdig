@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.fn.fullpage({
-        anchors: ['what-we-do', 'who-we-are', 'portfolio', 'contact'],
+        anchors: ['home', 'what-we-do', 'who-we-are', 'portfolio', 'contact'],
         navigation: true,
         navigationPosition: 'right',
         slidesNavigation: false

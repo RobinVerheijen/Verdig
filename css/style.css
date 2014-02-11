@@ -1,3 +1,4 @@
+
 @font-face
 {
     font-family: Matchbook;
@@ -7,7 +8,7 @@ body {
     font-family: "Matchbook";
     padding: 0;
     margin: 0;
-/*    background: url(../img/background_city.jpg);*/
+    background: url(../images/groovepaper.png);
 }
 #device-showcase {
     position: absolute;
@@ -59,7 +60,7 @@ body {
     background-size: cover;
 }
 #what-we-do-section {
-    background-image: url(../images/background_blurred.png);
+    /*background-image: url(../images/background_blurred.png);*/
 }
 #who-we-are-section {
     
