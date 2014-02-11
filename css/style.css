@@ -1,11 +1,6 @@
-
-@font-face
-{
-    font-family: Matchbook;
-    src: url(../fonts/Matchbook_Serif.ttf);
-}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 body {
-    font-family: "Matchbook";
+    font-family: "Open Sans", sans-serif;
     padding: 0;
     margin: 0;
     background: url(../images/groovepaper.png);
@@ -135,20 +130,89 @@ to {bottom:0px;}
     top: 40%;
     bottom: 0;
     margin: 0 auto;
-    width: 300px;
+/*    width: 300px;
     height: 300px;
-    border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
-    background: url(http://link-to-your/image.jpg) no-repeat;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+    border-radius: 150px;    */
 }
 
 #saron {
-    background: url(../images/saron.jpg) no-repeat;
-    left: 15%;
+    /*background: url(../images/saron.jpg) no-repeat;*/
+    left: 20%;
 }
 
 #robin {
-    background: url(../images/robin.jpg) no-repeat;
-    right: 15%;
+    /*background: url(../images/robin.jpg) no-repeat;*/
+    right: 20%;
+}
+
+.circular-image img {
+    width: 300px;
+    height: 300px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+    border-radius: 150px;
+}
+
+@media all and (max-width: 1024px) {
+    .circular-image img {
+        width: 250px !important;
+        height: 250px !important;
+        -webkit-border-radius: 125px !important;
+        -moz-border-radius: 125px !important;
+        -ms-border-radius: 125px !important;
+        -o-border-radius: 125px !important;
+        border-radius: 125px !important;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .circular-image img {
+        width: 200px !important;
+        height: 200px !important;
+        -webkit-border-radius: 100px !important;
+        -moz-border-radius: 100px !important;
+        -ms-border-radius: 100px !important;
+        -o-border-radius: 100px !important;
+        border-radius: 100px !important;
+    }
+    
+    #saron {
+        left: 10% !important;
+    }
+    
+    #robin {
+        right: 10% !important;
+    }
+}
+
+@media all and (max-width: 480px) {
+
+    .circular-image img {
+        width: 100px !important;
+        height: 100px !important;
+        -webkit-border-radius: 50px !important;
+        -moz-border-radius: 50px !important;
+        -ms-border-radius: 50px !important;
+        -o-border-radius: 50px !important;
+        border-radius: 50px !important;
+    }
+
+    #saron {
+        left: 10% !important;
+    }
+
+    #robin {
+        right: 10% !important;
+    }
+    
+}
+
+.who-are-we-name {
+    text-align: center;
 }
