@@ -5,9 +5,7 @@ $(document).ready(function() {
         navigationPosition: 'right',
         slidesNavigation: false,
         'afterLoad': function(anchorLink, index) {
-            if(index == 1) {
-                $('#logo').addClass('active');
-            } else if (index == 2) {
+            if (index == 2) {
                 $('#iphone-image, #ipad-image').addClass('active');
             } else if(index == 3 ) {
                 $('#saron, #robin').addClass('active');
@@ -17,7 +15,9 @@ $(document).ready(function() {
         }
 //        navigationTooltips: ['Wat doen wij', 'Wie zijn wij', 'Portfolio', 'Contact']
     });
-    
+
+    $('#logo-image').addClass('bounceIn animated');
+
     if(window.location.hash) {
         $(window.location.hash + '-listitem').addClass('active');
     }
