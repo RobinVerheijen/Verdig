@@ -133,21 +133,35 @@ body {
 }
 
 #saron {
-    /*background: url(../images/saron.jpg) no-repeat;*/
+    background: url(../images/saron.jpg) no-repeat;
     left: 0%;
 }
 #saron.active {
     left: 20%;
 }
 #robin {
-    /*background: url(../images/robin.jpg) no-repeat;*/
+    background: url(../images/robin.jpg) no-repeat;
     right: 0%;
 }
 #robin.active {
     right: 20%;
 }
 
-.circular-image img {
+.circular {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    /*background: url(../images/saron.jpg) no-repeat;*/
+    background-position: center center;
+    background-size: 150% !important;
+}
+.circular img {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+/*.circular-image img {
     width: 300px;
     height: 300px;
     -webkit-border-radius: 150px;
@@ -155,10 +169,10 @@ body {
     -ms-border-radius: 150px;
     -o-border-radius: 150px;
     border-radius: 150px;
-}
+}*/
 
 @media all and (max-width: 1024px) {
-    .circular-image img {
+    .circular {
         width: 250px !important;
         height: 250px !important;
         -webkit-border-radius: 125px !important;
@@ -167,10 +181,18 @@ body {
         -o-border-radius: 125px !important;
         border-radius: 125px !important;
     }
+
+    #saron {
+        left: 15% !important;
+    }
+
+    #robin {
+        right: 15% !important;
+    }
 }
 
 @media all and (max-width: 768px) {
-    .circular-image img {
+    .circular {
         width: 200px !important;
         height: 200px !important;
         -webkit-border-radius: 100px !important;
@@ -191,27 +213,62 @@ body {
 
 @media all and (max-width: 480px) {
 
-    .circular-image img {
-        width: 100px !important;
-        height: 100px !important;
-        -webkit-border-radius: 50px !important;
-        -moz-border-radius: 50px !important;
-        -ms-border-radius: 50px !important;
-        -o-border-radius: 50px !important;
-        border-radius: 50px !important;
+    .circular {
+        width: 200px !important;
+        height: 200px !important;
+        -webkit-border-radius: 100px !important;
+        -moz-border-radius: 100px !important;
+        -ms-border-radius: 100px !important;
+        -o-border-radius: 100px !important;
+        border-radius: 100px !important;
     }
 
     #saron {
-        left: 10% !important;
+        left: 20% !important;
+        top: 20% !important;
     }
 
     #robin {
-        right: 10% !important;
+        right: 20% !important;
+        top: 60% !important;
     }
 
+    .who-are-we-name {
+        font-size: 1.2em !important;
+    }
+}
+
+.who-are-we-name {
+    margin-top: 100%;
+    text-align: center;
+    font-weight: 100;
 }
 
 .who-are-we-name {
     text-align: center;
     font-weight: 100;
+}
+
+.portfolio-row {
+    width: 50%;
+    float: left;
+}
+.portfolio-row h2 {
+    position: relative;
+    margin-top: 0% !important;
+    padding-left: 55%;
+}
+.portfolio-image {
+    position: relative;
+    left: 20%;
+    margin-top: 0%;
+    width: 80%;
+    height: auto;
+}
+
+#iphone-portfolio {
+    margin-top: 5% !important;
+    left: 40% !important;
+    width: auto !important;
+    max-height: 60%;
 }
