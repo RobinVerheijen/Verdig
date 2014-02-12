@@ -51,7 +51,7 @@ body {
 }
 #iphone-image {
     bottom: 5%;
-    left: 25%;
+    left: 0%;
     margin: 0 auto;
     width: auto;
     max-width: 40%;
@@ -64,7 +64,7 @@ body {
 }
 #ipad-image {
     bottom: 7%;
-    right: 25%;
+    right: 0%;
     margin: 0 auto;
     width: auto;
     max-width: 40%;
