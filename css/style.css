@@ -68,11 +68,11 @@ body {
 
 }
 #fullPage-nav span {
-    border-color: rgb(248, 147, 31) !important;
+    border-color: rgb(116, 76, 41) !important;
 }
 
 #fullPage-nav li .active span {
-    background: rgb(248, 147, 31) !important;
+    background: rgb(116, 76, 41) !important;
 }
 #navigate-down-arrow {
     position: absolute;
