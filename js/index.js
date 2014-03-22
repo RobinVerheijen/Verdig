@@ -10,9 +10,7 @@ $(document).ready(function() {
             } else if(index == 3 ) {
                 $('#saron, #robin').addClass('active');
             }
-//            $('#infoMenu').toggleClass('whiteLinks', index == 4);
         }
-//        navigationTooltips: ['Wat doen wij', 'Wie zijn wij', 'Portfolio', 'Contact']
     });
 
     $('#logo').addClass('bounceIn animated');
