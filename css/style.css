@@ -1,9 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 body {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
     background: url(../images/groovepaper.png);
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: 400 !important;
 }
 #logo {
     background: url(../images/Logo_Verdig.png) center center no-repeat;
@@ -62,6 +66,8 @@ body {
 }
 .section {
     background-size: cover;
+    padding-left: 20%;
+    width: 80%;
 }
 #what-we-do-section {
     background-color: #333;
@@ -240,4 +246,50 @@ body {
     left: 40% !important;
     width: auto !important;
     max-height: 60%;
+}
+#vertical-menu-container {
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 99999999;
+    border-left: 4px solid rgba(248, 147, 31, 1);
+}
+#vertical-menu {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#vertical-menu li {
+    height: 20%;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    text-align: center;
+    line-height: 7.0em;
+    font-size: 2.0em;
+    cursor: pointer;
+    border-bottom: 4px solid rgba(248, 147, 31, 1);
+}
+#vertical-menu li a {
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+#vertical-menu li.active {
+    background: rgb(248, 147, 31);
+}
+#vertical-menu li:hover {
+    background: rgba(248, 147, 31, 0.50);
+    color: #fff;
+}
+#vertical-menu li:hover a {
+    color: #fff;
 }
