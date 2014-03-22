@@ -1,8 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
-/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
 body {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /*font-family: "Open Sans", sans-serif;*/
     padding: 0;
     margin: 0;
     background: url(../images/groovepaper.png);
@@ -11,11 +9,11 @@ body {
     background: url(../images/Logo_Verdig.png) center center no-repeat;
     width: 100%;
     height: 100%;
-    background-size: 70%;
+    background-size: 50%;
 }
 @media(min-width: 1440px) {
     #logo {
-        background-size: 50%;
+        background-size: 70%;
     }
 }
 .device-image {
@@ -101,30 +99,24 @@ body {
 .controlArrow {
     display: none !important;
 }
-
 @keyframes slide_arrow {
     from {bottom:10px;}
     to {bottom: 0px;}
 }
-
-@-webkit-keyframes slide_arrow
-{
+@-webkit-keyframes slide_arrow {
     from {bottom:10px;}
     to {bottom:0px;}
 }
-
 #who-we-are-left {
     width: 50%;
     height: 100%;
     float: left;
 }
-
 #who-we-are-right {
     width: 50%;
     height: 100%;
     float: left;
 }
-
 .who-we-are-image {
     position: absolute;
     top: 40%;
@@ -134,15 +126,7 @@ body {
     transition-duration: 0.7s;
     transition-property: all;
     transition-timing-function: ease-out;
-    /*    width: 300px;
-        height: 300px;
-        -webkit-border-radius: 150px;
-        -moz-border-radius: 150px;
-        -ms-border-radius: 150px;
-        -o-border-radius: 150px;
-        border-radius: 150px;    */
 }
-
 #saron {
     background: url(../images/saron.jpg) no-repeat;
     left: 0%;
@@ -157,14 +141,12 @@ body {
 #robin.active {
     right: 20%;
 }
-
 .circular {
     width: 300px;
     height: 300px;
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
-    /*background: url(../images/saron.jpg) no-repeat;*/
     background-position: center center;
     background-size: 150% !important;
 }
@@ -172,16 +154,6 @@ body {
     opacity: 0;
     filter: alpha(opacity=0);
 }
-/*.circular-image img {
-    width: 300px;
-    height: 300px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    -ms-border-radius: 150px;
-    -o-border-radius: 150px;
-    border-radius: 150px;
-}*/
-
 @media all and (max-width: 1024px) {
     .circular {
         width: 250px !important;
@@ -192,16 +164,13 @@ body {
         -o-border-radius: 125px !important;
         border-radius: 125px !important;
     }
-
     #saron {
         left: 15% !important;
     }
-
     #robin {
         right: 15% !important;
     }
 }
-
 @media all and (max-width: 768px) {
     .circular {
         width: 200px !important;
@@ -212,18 +181,14 @@ body {
         -o-border-radius: 100px !important;
         border-radius: 100px !important;
     }
-
     #saron {
         left: 10% !important;
     }
-
     #robin {
         right: 10% !important;
     }
 }
-
 @media all and (max-width: 480px) {
-
     .circular {
         width: 200px !important;
         height: 200px !important;
@@ -233,33 +198,27 @@ body {
         -o-border-radius: 100px !important;
         border-radius: 100px !important;
     }
-
     #saron {
         left: 20% !important;
         top: 20% !important;
     }
-
     #robin {
         right: 20% !important;
         top: 60% !important;
     }
-
     .who-are-we-name {
         font-size: 1.2em !important;
     }
 }
-
 .who-are-we-name {
     margin-top: 100%;
     text-align: center;
     font-weight: 100;
 }
-
 .who-are-we-name {
     text-align: center;
     font-weight: 100;
 }
-
 .portfolio-row {
     width: 50%;
     float: left;
@@ -276,7 +235,6 @@ body {
     width: 80%;
     height: auto;
 }
-
 #iphone-portfolio {
     margin-top: 5% !important;
     left: 40% !important;
