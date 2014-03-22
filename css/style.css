@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 /*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
 body {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -6,6 +6,10 @@ body {
     padding: 0;
     margin: 0;
     background: url(../images/groovepaper.png);
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: 400 !important;
 }
 #logo {
     background: url(../images/Logo_Verdig.png) center center no-repeat;

@@ -55,6 +55,7 @@
     line-height: 25px;
     opacity: 0.8;
     text-align: center;
+    font-weight: 400;
 }
 .ca-menu li:hover{
     background: rgba(248, 147, 31, 0.2);
