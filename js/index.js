@@ -29,4 +29,8 @@ $(document).ready(function() {
     $('#imac-image').click(function() {
         $.fn.fullpage.moveTo('what-we-do', 1);
     });
+    
+    $('.vertical-menu-listitem').click(function() {
+        window.location.hash = $(this).attr('id').split('-listitem')[0]
+    });
 });
