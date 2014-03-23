@@ -216,8 +216,6 @@ h1, h2, h3, h4, h5 {
     margin-top: 100%;
     text-align: center;
     font-weight: 100;
-}
-.who-are-we-name {
     text-align: center;
     font-weight: 100;
 }
@@ -225,20 +223,23 @@ h1, h2, h3, h4, h5 {
     width: 50%;
     float: left;
 }
-.portfolio-row h2 {
+#portfolio-title-web {
     position: relative;
-    margin-top: 0% !important;
-    padding-left: 55%;
+    left: 53%;
+}
+#portfolio-title-app {
+    position: relative;
+    left: 55%;
 }
 .portfolio-image {
     position: relative;
-    left: 20%;
-    margin-top: 0%;
-    width: 80%;
+    left: 10%;
+    margin-bottom: 0%;
+    width: 90%;
     height: auto;
 }
 #iphone-portfolio {
-    margin-top: 5% !important;
+    margin-bottom: 0% !important;
     left: 40% !important;
     width: auto !important;
     max-height: 60%;
@@ -271,7 +272,7 @@ h1, h2, h3, h4, h5 {
 }
 #vertical-menu li a {
     text-decoration: none;
-    color: #333;
+    color: #353b46;
     width: 100%;
     height: 100%;
     font-size: 2.0em;
@@ -306,7 +307,7 @@ h1, h2, h3, h4, h5 {
     margin: 0 auto;*/
     font-size: 5.0vmax;
     top: 10%;
-    color: #333;
+    color: #353b46;
     width: 100%;
     display: block;
     padding-top: 5%;
@@ -346,17 +347,73 @@ h1, h2, h3, h4, h5 {
 }
 
 .icon-home:before {
-	content: "\e600";
-}
-.icon-who-we-are:before {
-	content: "\e601";
-}
-.icon-contact:before {
-	content: "\e602";
+	content: "\f015";
 }
 .icon-portfolio:before {
-	content: "\e603";
+	content: "\f0b1";
+}
+.icon-who-we-are:before {
+	content: "\f0c0";
+}
+.icon-contact:before {
+	content: "\f0e0";
 }
 .icon-what-we-do:before {
-	content: "\e604";
+	content: "\f121";
+}
+
+.contact-form {
+    position: relative;
+    left: 25%;
+}
+#contact-phone-number, #contact-email-address, #contact-name {
+    position: absolute;
+    left: 0;
+    width: 30%;
+    max-width: 200px;
+    min-width: 100px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 1.0em;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background-color: #353b46;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    rgba(255, 255, 255, 0.8);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    rgba(255, 255, 255, 0.8);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    rgba(255, 255, 255, 0.8);
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    rgba(255, 255, 255, 0.8);
+}
+#contact-name {
+    margin-top: 0;
+}
+#contact-email-address {
+    margin-top: 3.5%;
+}
+#contact-phone-number {
+    margin-top: 7%;
+}
+
+#contact-message {
+    position: absolute;
+    left: 11.3%;
+    height: 182px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 10px;
+    width: 30%;
+    max-width: 230px;
+    min-width: 100px;
+    background-color: #353b46;
+    font-size: 1.0em;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
