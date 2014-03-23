@@ -31,18 +31,16 @@ h1, h2, h3, h4, h5 {
     cursor: pointer;
 }
 #imac-image {
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 0 auto;
+    bottom: 10%;
+    left: 35%;
     width: auto;
     max-width: 90%;
     height: auto;
     max-height: 90%;
 }
 #iphone-image {
-    bottom: 5%;
-    left: 0%;
+    bottom: 10%;
+    left: 20%;
     margin: 0 auto;
     width: auto;
     max-width: 40%;
@@ -50,19 +48,19 @@ h1, h2, h3, h4, h5 {
     max-height: 40%;
 }
 #iphone-image.active {
-    left: 10%;
+    left: 31.6%;
 }
 #ipad-image {
-    bottom: 7%;
+    bottom: 10%;
     right: 0%;
     margin: 0 auto;
     width: auto;
-    max-width: 40%;
+    max-width: 50%;
     height: auto;
-    max-height: 40%;
+    max-height: 50%;
 }
 #ipad-image.active {
-    right: 10%;
+    right: 10.9%;
 }
 .section {
     background-size: cover;
@@ -89,7 +87,7 @@ h1, h2, h3, h4, h5 {
 }
 #navigate-down-arrow {
     position: absolute;
-    left: 0;
+    left: 20%;
     right: 0;
     margin: 0 auto;
     bottom: 0;
@@ -278,7 +276,8 @@ h1, h2, h3, h4, h5 {
     height: 100%;
     font-size: 2.0em;
     display: block;
-    margin-top: 5%;
+    margin-top: -30%;
+    line-height: 12em;
 }
 #vertical-menu li.active {
     background: rgb(248, 147, 31);
