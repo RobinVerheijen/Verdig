@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $.fn.fullpage({
         anchors: ['home', 'what-we-do', 'who-we-are', 'portfolio', 'contact'],
-        navigation: true,
+//        navigation: true,
         navigationPosition: 'right',
         slidesNavigation: false,
         'afterLoad': function(anchorLink, index) {

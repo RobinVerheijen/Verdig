@@ -31,8 +31,8 @@ h1, h2, h3, h4, h5 {
     cursor: pointer;
 }
 #imac-image {
-    bottom: 10%;
-    left: 35%;
+    top: 5%;
+    left: 30%;
     width: auto;
     max-width: 90%;
     height: auto;
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5 {
 }
 #iphone-image {
     bottom: 10%;
-    left: 20%;
+    left: 16%;
     margin: 0 auto;
     width: auto;
     max-width: 40%;
@@ -48,11 +48,11 @@ h1, h2, h3, h4, h5 {
     max-height: 40%;
 }
 #iphone-image.active {
-    left: 31.6%;
+    left: 26%;
 }
 #ipad-image {
     bottom: 10%;
-    right: 0%;
+    right: -5%;
     margin: 0 auto;
     width: auto;
     max-width: 50%;
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5 {
     max-height: 50%;
 }
 #ipad-image.active {
-    right: 10.9%;
+    right: 5%;
 }
 .section {
     background-size: cover;
@@ -131,17 +131,17 @@ h1, h2, h3, h4, h5 {
 }
 #saron {
     background: url(../images/saron.jpg) no-repeat;
-    left: 0%;
+    left: 20%;
 }
 #saron.active {
-    left: 20%;
+    left: 30%;
 }
 #robin {
     background: url(../images/robin.jpg) no-repeat;
-    right: 0%;
+    right: 5%;
 }
 #robin.active {
-    right: 20%;
+    right: 15%;
 }
 .circular {
     width: 300px;
@@ -225,7 +225,7 @@ h1, h2, h3, h4, h5 {
 }
 #portfolio-title-web {
     position: relative;
-    left: 53%;
+    left: 73%;
 }
 #portfolio-title-app {
     position: relative;
@@ -233,15 +233,15 @@ h1, h2, h3, h4, h5 {
 }
 .portfolio-image {
     position: relative;
-    left: 10%;
     margin-bottom: 0%;
-    width: 90%;
-    height: auto;
+    width: auto !important;
+}
+#imac-portfolio {
+    left: 20%;
+    max-height: 70%;
 }
 #iphone-portfolio {
-    margin-bottom: 0% !important;
     left: 40% !important;
-    width: auto !important;
     max-height: 60%;
 }
 #vertical-menu-container {
@@ -379,12 +379,15 @@ h1, h2, h3, h4, h5 {
     position: relative;
     left: 25%;
 }
+.contact-form input, .contact-form textarea {
+    margin-top: 5px;
+    display: block;
+}
 #contact-phone-number, #contact-email-address, #contact-name {
-    position: absolute;
-    left: 0;
     width: 30%;
-    max-width: 200px;
-    min-width: 100px;
+    margin-left: 5%;
+    max-width: 400px;
+    min-width: 200px;
     padding: 10px;
     border: 1px solid #333;
     border-radius: 4px;
@@ -406,27 +409,50 @@ h1, h2, h3, h4, h5 {
 :-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    rgba(255, 255, 255, 0.8);
 }
-#contact-name {
+/*#contact-name {
     margin-top: 0;
 }
 #contact-email-address {
-    margin-top: 3.5%;
+    margin-top: 6%;
 }
 #contact-phone-number {
-    margin-top: 7%;
-}
+    margin-top: 12%;
+}*/
 
 #contact-message {
-    position: absolute;
-    left: 11.3%;
     height: 182px;
     border: 1px solid #333;
     border-radius: 4px;
+    margin-left: 5%;
     padding: 10px;
     width: 30%;
-    max-width: 230px;
-    min-width: 100px;
+    max-width: 400px;
+    min-width: 200px;
     background-color: #353b46;
     font-size: 1.0em;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#contact-send {
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-left: 5%;
+    padding: 10px;
+    width: 35%;
+    height: 60px;
+    max-width: 368px;
+    min-width: 200px;
+    background-color: #353b46;
+    color: #fff;
+    font-size: 1.0em;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+#contact-send:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #353b46;
 }
