@@ -31,8 +31,9 @@ h1, h2, h3, h4, h5 {
     cursor: pointer;
 }
 #imac-image {
+    position: relative;
     top: 5%;
-    left: 30%;
+    left: 20%;
     width: auto;
     max-width: 90%;
     height: auto;
@@ -40,7 +41,7 @@ h1, h2, h3, h4, h5 {
 }
 #iphone-image {
     bottom: 10%;
-    left: 16%;
+    left: 15%;
     margin: 0 auto;
     width: auto;
     max-width: 40%;
@@ -48,7 +49,7 @@ h1, h2, h3, h4, h5 {
     max-height: 40%;
 }
 #iphone-image.active {
-    left: 26%;
+    left: 30%;
 }
 #ipad-image {
     bottom: 10%;
@@ -60,7 +61,7 @@ h1, h2, h3, h4, h5 {
     max-height: 50%;
 }
 #ipad-image.active {
-    right: 5%;
+    right: 10%;
 }
 .section {
     background-size: cover;
@@ -439,7 +440,7 @@ h1, h2, h3, h4, h5 {
     padding: 10px;
     width: 35%;
     height: 60px;
-    max-width: 368px;
+    max-width: 400px;
     min-width: 200px;
     background-color: #353b46;
     color: #fff;
