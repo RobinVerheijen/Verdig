@@ -195,11 +195,6 @@ h1, h2, h3, h4, h5 {
     color: #fff;
 }
 .menu-icon {
-    /*    position: absolute;
-        top: 50px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;*/
     font-size: 5.0vmax;
     top: 10%;
     color: #353b46;

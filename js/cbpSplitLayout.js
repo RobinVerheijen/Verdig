@@ -52,7 +52,7 @@ $(document).ready(function() {
                 var dir = $(ev.target).hasClass('back-right') ? 'left' : 'right', page = dir === 'right' ? pageRight : pageLeft;
                 $('.splitlayout').removeClass('open-' + dir);
                 $('.splitlayout').addClass('close-' + dir);
-                page.addEventListener(transEndEventName, onEndTransFn);
+                $('.' + dir).on(transEndEventName, onEndTransFn);
             };
 
     $('.back-left').on(eventtype, backToIntro);
