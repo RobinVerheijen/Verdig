@@ -13,13 +13,9 @@ h1, h2, h3, h4, h5 {
     background: url(../images/Logo_Verdig.png) center center no-repeat;
     width: 100%;
     height: 100%;
-    background-size: 50%;
+    background-size: 100%;
 }
-@media(min-width: 1440px) {
-    #logo {
-        background-size: 70%;
-    }
-}
+
 .device-image {
     position: absolute;
     transition-delay: 0s;
@@ -141,7 +137,7 @@ h1, h2, h3, h4, h5 {
     width: 20%;
     left: 0;
     top: 0;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 1);
     z-index: 99999999;
     border-left: 4px solid rgba(248, 147, 31, 1);
 }
@@ -220,6 +216,245 @@ h1, h2, h3, h4, h5 {
     .menu-icon {
         font-size: 4.0vmax;
         bottom: 50%;
+    }
+}
+/* iPad */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    #logo {
+        background-size: 100%;
+    }
+    #imac-image {
+        left: 5%;
+        margin-bottom: 10% !important;
+    }
+    #ipad-image {
+        margin-bottom: -2%;
+    }
+    #iphone-image {
+        margin-bottom: -2%;
+    }
+    #imac-portfolio {
+        left: 10%;
+        width: auto;
+        max-width: 110%;
+        height: auto;
+        max-height: 110%;
+    }
+    #portfolio-title-web {
+        left: 60%;
+    }
+    #iphone-portfolio {
+        left: 15%;
+        width: auto;
+        max-width: 50%;
+        height: auto;
+        max-height: 50%;
+    }
+    .contact-form {
+        margin-top: -5%;
+    }
+}
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    #vertical-menu-container {
+        width: 100%;
+        height: 75px;
+        top: 0;
+        border-left: 0;
+        background: rgba(255, 255, 255, 0.6);
+    }
+    #vertical-menu {
+        list-style-type: none;
+    }
+    #vertical-menu li {
+        width: 20% !important;
+        height: 100% !important;
+        display: inline;
+        position: relative;
+        float: left;
+        /*        -webkit-box-shadow: inset 4px 0px 0px rgba(248, 147, 31, 1);
+                -moz-box-shadow: inset 4px 0px 0px rgba(248, 147, 31, 1);
+                box-shadow: inset 4px 0px 0px rgba(248, 147, 31, 1);*/
+    }
+    #vertical-menu label {
+        display: none;
+    }
+    #vertical-menu span {
+        font-size: 2.5em;
+        line-height: 1.75em;
+    }
+    .section {
+        padding-left: 0%;
+        width: 100%;
+    }
+    #navigate-down-arrow {
+        left: 0;
+    }
+    #imac-image {
+        left: 5%;
+    }
+    #ipad-image {
+        right: 0;
+        top: 54%;
+        height: 45%;
+    }
+    #ipad-image.active {
+        right: 10%;
+    }
+    #iphone-image {
+        left: 0;
+        top: 57%;
+        height: 45%;
+    }
+    #iphone-image.active {
+        left: 10%;
+    }
+    .contact-form {
+        left: 30% !important;
+        top: 30% !important;
+    }
+    #contact-send {
+        width: 107.5% !important;
+    }
+}
+/* iPhone */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+    #vertical-menu-container {
+        width: 100%;
+        height: 50px;
+        top: 0;
+        border-left: 0;
+        background: rgba(255, 255, 255, 0.6);
+    }
+    #vertical-menu {
+        list-style-type: none;
+    }
+    #vertical-menu li {
+        width: 20% !important;
+        height: 100% !important;
+        display: inline;
+        position: relative;
+        float: left;
+        /*        -webkit-box-shadow: inset 4px 0px 0px rgba(248, 147, 31, 1);
+                -moz-box-shadow: inset 4px 0px 0px rgba(248, 147, 31, 1);
+                box-shadow: inset 4px 0px 0px rgba(248, 147, 31, 1);*/
+    }
+    #vertical-menu label {
+        display: none;
+    }
+    #vertical-menu span {
+        font-size: 2.5em;
+        line-height: 1.5em;
+    }
+    .section {
+        padding-left: 0%;
+        width: 100%;
+    }
+    #logo {
+        background-size: 100%;
+    }
+    #navigate-down-arrow {
+        left: 0;
+    }
+    #imac-image {
+        left: 5%;
+    }
+    #ipad-image {
+        right: 0;
+        top: 54%;
+        height: 45%;
+    }
+    #ipad-image.active {
+        right: 5%;
+    }
+    #iphone-image {
+        left: 0;
+        top: 57%;
+        height: 45%;
+    }
+    #iphone-image.active {
+        left: 5%;
+    }
+    .contact-form {
+        left: 7% !important;
+        width: 80% !important;
+        top: 5% !important;
+    }
+    #contact-send {
+        width: 108.5% !important;
+    }
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+    #imac-image {
+        top: -15% !important;
+    }
+    #ipad-image {
+        top: 58% !important;
+        height: 40% !important;
+    }
+    #iphone-image {
+        top: 59% !important;
+    }
+    .portfolio-row {
+        width: 100%;
+    }
+    #portfolio-title-web {
+        left: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 17%;
+    }
+    #imac-portfolio {
+        width: auto;
+        max-width: 90%;
+        max-height: 40%;
+        height: auto;
+        margin-top: -4% !important;
+        left: 10% !important;
+    }
+    #portfolio-title-app {
+        left: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 0%;
+    }
+    #iphone-portfolio {
+        width: auto;
+        max-width: 90% !important;
+        height: auto;
+        max-height: 40% !important;
+        margin-top: -3% !important;
+        left: 34% !important;
+    }
+    .contact-form {
+        margin-top: 12%;
+    }
+    .contact-form input {
+        height: 30px !important;
+    }
+    #contact-send {
+        height: 60px !important;
+    }
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+    #vertical-menu-container {
+        height: 25px;
+    }
+    #vertical-menu-container li span {
+        font-size: 1.5em;
+        line-height: 1.2em;
     }
 }
 #vertical-menu li.active .menu-icon {
@@ -324,6 +559,8 @@ h1, h2, h3, h4, h5 {
     -o-transition: background-color 300ms linear;
     -ms-transition: background-color 300ms linear;
     transition: background-color 300ms linear;
+    -webkit-appearance: none;
+    -webkit-border-radius: 4px;
 }
 #contact-send:hover {
     cursor: pointer;
