@@ -1,7 +1,6 @@
 $(document).ready(function() {
     $.fn.fullpage({
         anchors: ['home', 'what-we-do', 'who-we-are', 'portfolio', 'contact'],
-//        navigation: true,
         navigationPosition: 'right',
         slidesNavigation: false,
         'afterLoad': function(anchorLink, index) {
@@ -29,7 +28,7 @@ $(document).ready(function() {
     $('#imac-image').click(function() {
         $.fn.fullpage.moveTo('what-we-do', 1);
     });
-    
+
     $('.vertical-menu-listitem').click(function() {
         window.location.hash = $(this).attr('id').split('-listitem')[0]
     });

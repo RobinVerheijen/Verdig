@@ -7,12 +7,14 @@
 
         <link href="css/style.css" rel="stylesheet">
         <link href="css/jquery.fullPage.css" rel="stylesheet">
-        <link href="css/menu.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/splitlayout.css" />
 
         <script src="js/jquery.js"></script>
         <script src="js/jqueryui.js"></script>
         <script src="js/jquery.fullPage.min.js"></script>
         <script src="js/index.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/cbpSplitLayout.js"></script>
     </head>
     <body>
         <div id="vertical-menu-container">
@@ -39,46 +41,6 @@
                 </li>
             </ul>
         </div>
-<!--        <div id="menu-container">
-            <ul class="ca-menu" id="menu">
-                <li id="home-listitem">
-                    <a href="#home">
-                        <div class="ca-content">
-                            <h2 class="ca-main">Home</h2>
-                        </div>
-                    </a>
-                </li>
-                <li id="what-we-do-listitem">
-                    <a href="#what-we-do">
-                        <div class="ca-content">
-                            <h2 class="ca-main">Wat doen wij</h2>
-                        </div>
-                    </a>
-                </li>
-
-                <li id="who-we-are-listitem">
-                    <a href="#who-we-are">
-                        <div class="ca-content">
-                            <h2 class="ca-main">Wie zijn wij</h2>
-                        </div>
-                    </a>
-                </li>
-                <li id="portfolio-listitem">
-                    <a href="#portfolio">
-                        <div class="ca-content">
-                            <h2 class="ca-main">Portfolio</h2>
-                        </div>
-                    </a>
-                </li>
-                <li id="contact-listitem">
-                    <a href="#contact">
-                        <div class="ca-content">
-                            <h2 class="ca-main">Contact</h2>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>-->
         <div class="section active" id="home-section">
             <div id="logo"></div>
             <a href="#what-we-do"><img id="navigate-down-arrow" src="images/arrow-down.png" alt="Volgende pagina"></a>
@@ -88,16 +50,66 @@
             <img class="device-image" id="iphone-image" src="images/iphone_flat.png" alt="iPhone"/>
             <img class="device-image" id="ipad-image" src="images/ipad_flat.png" alt="iPad"/>
         </div>
-        <div class="section" id="who-we-are-section">
-            <div id="who-we-are-left">
-                <div class="circular who-we-are-image" id="saron">
-                    <h2 class="who-are-we-name">Saron Grave</h2>
+        <div class="container section">
+            <div id="splitlayout" class="splitlayout">
+                <div class="intro">
+                    <div class="side side-left">
+                        <div class="intro-content">
+                            <div class="profile"><img src="images/robin.jpg" alt="profile1"></div>
+                            <h1><span>Robin Verheijen </span><span>Web Developer</span></h1>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="side side-right">
+                        <div class="intro-content">
+                            <div class="profile"><img src="images/saron.jpg" alt="profile2"></div>
+                            <h1><span>Saron Grave </span><span>Web Designer</span></h1>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
                 </div>
-            </div>
-            <div id="who-we-are-right">
-                <div class="circular who-we-are-image" id="robin">
-                    <h2 class="who-are-we-name">Robin Verheijen</h2>
+                <div class="page page-right">
+                    <div class="page-inner">
+                        <section>
+                            <h2>Web Development</h2>
+                            <p>Scenario archetype complementary responsive script pixel sidebar sitemap keep it simple. Complementary visuals footer CSS from alan cooper delightful.  Photoshop iconography simplicity user experience affordance narrative ascenders contour.  Slab serif interstitial skeuomorphism illustrator design by committee simplicity alan cooper eye tracking.  Typography contrast mental model typesetting affordance narrative from CSS. Retina simplicity design by committee typography oblique.</p>
+                            <p>Delightful ascenders contrast prototype. Ligature jakob nielsen user measure.  Ligature contrast glyph rule of thirds composition interstitial dribbble.  Mental model typography urbanized balance.  Resolution rounded corners IDEO constraints dribbble persona.  Portfolio sketch baseline 66-character line.  Usability testing mental model simplicity aspect ratio pencil type.  Usable sans-serif visualization leading prägnanz baseline pencil fireworks clarity omnigraffle.</p>
+                        </section>
+                        <section>
+                            <h2>Constraints</h2>
+                            <p>Card-sorting dropdown constraints alan cooper prägnanz iconography. Stakeholder balsamiq italic vector composition ethnography CSS monospace hierarchy. Eye tracking serif persona focus group.</p>
+                            <p>Typesetting artifact rounded corners eye tracking braindump drawer menu mockup dropdown measure. Jony ive eye tracking script monospace heuristic tabs sketches. Affordance eye tracking scenario usable ligature typesetting clarity responsive. Information architecture golden ratio drawer menu header affordance aspect ratio. Balsamiq slab serif IDEO cognitive dissonance kerning pixel pixel-perfect. Pixel rounded corners header workflow portfolio.</p>
+                            <p>Scenario navigation complementary jony ive helvetica archetype interstitial serif front-end. Constraints pencil usability gestalt design language mockup usability testing affordance jakob nielsen.</p>
+                        </section>
+                        <section>
+                            <h2>Ligature</h2>
+                            <p>Delightful ascenders contrast prototype. Ligature jakob nielsen user measure.  Ligature contrast glyph rule of thirds composition interstitial dribbble.  Mental model typography urbanized balance.  Resolution rounded corners IDEO constraints dribbble persona.  Portfolio sketch baseline 66-character line.  Usability testing mental model simplicity aspect ratio pencil type.  Usable sans-serif visualization leading prägnanz baseline pencil fireworks clarity omnigraffle.</p>
+                            <p>Paper prototype urbanized headroom typography splash screen pencil modal branding. Retina omnigraffle objectified descender navigation adobe ethnography. Innovate design by committee modern hero message. Contrast user-centered color theory keep it simple visuals bevel adobe descender splash screen. From focus group accessibility sans-serif archetype pixel-perfect complementary skeuomorphism. Focus group iconography figure-ground navigation user-centered omnigraffle from.</p>
+                        </section>
+                    </div>
                 </div>
+                <div class="page page-left">
+                    <div class="page-inner">
+                        <section>
+                            <h2>Web Design</h2>
+                            <p>Scenario archetype complementary responsive script pixel sidebar sitemap keep it simple. Complementary visuals footer CSS from alan cooper delightful.  Photoshop iconography simplicity user experience affordance narrative ascenders contour.  Slab serif interstitial skeuomorphism illustrator design by committee simplicity alan cooper eye tracking.  Typography contrast mental model typesetting affordance narrative from CSS. Retina simplicity design by committee typography oblique.</p>
+                            <p>Delightful ascenders contrast prototype. Ligature jakob nielsen user measure.  Ligature contrast glyph rule of thirds composition interstitial dribbble.  Mental model typography urbanized balance.  Resolution rounded corners IDEO constraints dribbble persona.  Portfolio sketch baseline 66-character line.  Usability testing mental model simplicity aspect ratio pencil type.  Usable sans-serif visualization leading prägnanz baseline pencil fireworks clarity omnigraffle.</p>
+                        </section>
+                        <section>
+                            <h2>Responsive</h2>
+                            <p>Card-sorting dropdown constraints alan cooper prägnanz iconography. Stakeholder balsamiq italic vector composition ethnography CSS monospace hierarchy. Eye tracking serif persona focus group.</p>
+                            <p>Typesetting artifact rounded corners eye tracking braindump drawer menu mockup dropdown measure. Jony ive eye tracking script monospace heuristic tabs sketches. Affordance eye tracking scenario usable ligature typesetting clarity responsive. Information architecture golden ratio drawer menu header affordance aspect ratio. Balsamiq slab serif IDEO cognitive dissonance kerning pixel pixel-perfect. Pixel rounded corners header workflow portfolio.</p>
+                            <p>Scenario navigation complementary jony ive helvetica archetype interstitial serif front-end. Constraints pencil usability gestalt design language mockup usability testing affordance jakob nielsen.</p>
+                        </section>
+                        <section>
+                            <h2>Prototype</h2>
+                            <p>Delightful ascenders contrast prototype. Ligature jakob nielsen user measure.  Ligature contrast glyph rule of thirds composition interstitial dribbble.  Mental model typography urbanized balance.  Resolution rounded corners IDEO constraints dribbble persona.  Portfolio sketch baseline 66-character line.  Usability testing mental model simplicity aspect ratio pencil type.  Usable sans-serif visualization leading prägnanz baseline pencil fireworks clarity omnigraffle.</p>
+                            <p>Paper prototype urbanized headroom typography splash screen pencil modal branding. Retina omnigraffle objectified descender navigation adobe ethnography. Innovate design by committee modern hero message. Contrast user-centered color theory keep it simple visuals bevel adobe descender splash screen. From focus group accessibility sans-serif archetype pixel-perfect complementary skeuomorphism. Focus group iconography figure-ground navigation user-centered omnigraffle from.</p>
+                        </section>
+                    </div>
+                </div>
+                <a href="#" class="back back-right" title="back to intro">&rarr;</a>
+                <a href="#" class="back back-left" title="back to intro">&larr;</a>
             </div>
         </div>
         <div class="section" id="portfolio-section">
