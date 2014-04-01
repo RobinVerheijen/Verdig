@@ -1,15 +1,13 @@
 <?php
-
 $domain = $_SERVER['SERVER_NAME'];
 
-if(strpos($domain, 'isinvorm') !== false) {
+if (strpos($domain, 'isinvorm') !== false) {
 
-header('Location: /leon');
-} else if(strpos($domain, 'kimlynn') !== false) {
+    header('Location: /leon');
+} else if (strpos($domain, 'kimlynn') !== false) {
 
-header('Location: /kim');
+    header('Location: /kim');
 }
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,11 +20,10 @@ header('Location: /kim');
         <link href="css/jquery.fullPage.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/splitlayout.css" />
 
-        <script src="js/jquery.js"></script>
-        <script src="js/jqueryui.js"></script>
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="js/jqueryui-1.10.4.min.js"></script>
         <script src="js/jquery.fullPage.min.js"></script>
         <script src="js/index.js"></script>
-        <script src="js/modernizr.custom.js"></script>
         <script src="js/SplitLayout.min.js"></script>
     </head>
     <body>
