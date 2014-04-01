@@ -121,7 +121,6 @@
 }
 .page-right {
     left: 40%;
-    outline: 5px solid #fff; /* avoid rounding gaps */
     background: #fff;
     color: rgb(248,147,31);
     -webkit-transform: translateX(100%);
@@ -129,7 +128,6 @@
 }
 .page-left {
     left: 20%;
-    outline: 5px solid rgb(248,147,31); /* avoid rounding gaps */
     background: rgb(248,147,31);
     color: #fff;
     text-align: right;
@@ -141,6 +139,7 @@
     padding: 2em;
 }
 .page-inner section {
+    padding-top: 30%;
     padding-bottom: 1em;
 }
 .page-inner h2 {
