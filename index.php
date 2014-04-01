@@ -14,17 +14,9 @@ if (strpos($domain, 'isinvorm') !== false) {
     <head>
         <title>Verdig - Home</title>
         <meta charset="UTF-8">
+        <meta name="robots" content="noindex, nofollow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/jquery.fullPage.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/splitlayout.css" />
-
-        <script src="js/jquery-2.1.0.min.js"></script>
-        <script src="js/jqueryui-1.10.4.min.js"></script>
-        <script src="js/jquery.fullPage.min.js"></script>
-        <script src="js/index.js"></script>
-        <script src="js/SplitLayout.min.js"></script>
     </head>
     <body>
         <div id="vertical-menu-container">
@@ -129,5 +121,12 @@ if (strpos($domain, 'isinvorm') !== false) {
                 <input id="contact-send" type="submit" value="Verstuur">
             </form>
         </div>
+        <link href="css/jquery.fullPage.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/splitlayout.css" />
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="js/jqueryui-1.10.4.min.js"></script>
+        <script src="js/jquery.fullPage.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/SplitLayout.min.js"></script>
     </body>
 </html>

@@ -1,0 +1,20 @@
+Options +FollowSymLinks
+
+RewriteEngine on
+
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+
+# 1 YEAR
+<FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav)$">
+Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+
+# 1 WEEK
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|txt|xml|js|css|html|htm|php|cgi|pl)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+AddType application/x-httpd-php .html, .htm
+AddHandler application/x-httpd-php .html .htm
