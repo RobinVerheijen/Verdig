@@ -17,7 +17,7 @@ if (strpos($domain, 'isinvorm') !== false) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/jquery.fullPage.css" rel="stylesheet">
+        <link href="css/jquery.fullPage.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/splitlayout.css" />
 
         <script src="js/jquery-2.1.0.min.js"></script>
