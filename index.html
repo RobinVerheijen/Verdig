@@ -16,7 +16,7 @@ header('Location: /kim');
     <head>
         <title>Verdig - Home</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
         <link href="css/style.css" rel="stylesheet">
         <link href="css/jquery.fullPage.css" rel="stylesheet">
@@ -27,7 +27,7 @@ header('Location: /kim');
         <script src="js/jquery.fullPage.min.js"></script>
         <script src="js/index.js"></script>
         <script src="js/modernizr.custom.js"></script>
-        <script src="js/cbpSplitLayout.min.js"></script>
+        <script src="js/SplitLayout.min.js"></script>
     </head>
     <body>
         <div id="vertical-menu-container">
@@ -69,16 +69,14 @@ header('Location: /kim');
                     <div class="side side-left">
                         <div class="intro-content">
                             <div class="profile"><img src="images/robin.jpg" alt="profile1"></div>
-                            <h1><span>Robin Verheijen</span><span>Web Developer</span></h1>
+                            <h1><span>Robin Verheijen</span><span class="divider"></span><span>Web Developer</span></h1>
                         </div>
-                        <div class="overlay"></div>
                     </div>
                     <div class="side side-right">
                         <div class="intro-content">
                             <div class="profile"><img src="images/saron.jpg" alt="profile2"></div>
-                            <h1><span>Saron Grave</span><span>Web Designer</span></h1>
+                            <h1><span>Saron Grave</span><span class="divider"></span><span>Web Designer</span></h1>
                         </div>
-                        <div class="overlay"></div>
                     </div>
                     <div class="page page-right">
                         <div class="page-inner">
@@ -111,8 +109,8 @@ header('Location: /kim');
                         </div>
                     </div>
                 </div>
-                <a href="#" class="back back-right" title="back to intro">&rarr;</a>
-                <a href="#" class="back back-left" title="back to intro">&larr;</a>
+                <a href="#" class="back back-right" title="Terug naar overzicht">X</a>
+                <a href="#" class="back back-left" title="Terug naar overzicht">X</a>
             </div>
         </div>
         <div class="section" id="portfolio-section">
