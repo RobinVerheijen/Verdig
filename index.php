@@ -109,8 +109,8 @@ if (strpos($domain, 'isinvorm') !== false) {
                 <input id="contact-send" type="submit" value="Verstuur">
             </form>
         </div>
-        <link href="css/jquery.fullPage.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/splitlayout.css" />
+        <link href="css/jquery.fullPage.min.css" rel="stylesheet"/>
+        <link href="css/splitlayout.css" rel="stylesheet"/>
         <script src="js/jquery-2.1.0.min.js"></script>
         <script src="js/jqueryui-1.10.4.min.js"></script>
         <script src="js/jquery.fullPage.min.js"></script>
