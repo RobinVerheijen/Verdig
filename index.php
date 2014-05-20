@@ -1,22 +1,26 @@
-<?php
-$domain = $_SERVER['SERVER_NAME'];
-
-if (strpos($domain, 'isinvorm') !== false) {
-
-    header('Location: /leon');
-} else if (strpos($domain, 'kimlynn') !== false) {
-
-    header('Location: /kim');
-}
-?>
 <!DOCTYPE html>
 <html>
     <head>
         <title>Verdig - Home</title>
         <meta charset="UTF-8">
-        <meta name="robots" content="noindex, nofollow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet"/>
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-39212848-4', 'verdig.nl');
+            ga('send', 'pageview');
+        </script>
     </head>
     <body>
         <div id="vertical-menu-container">
@@ -111,7 +115,7 @@ if (strpos($domain, 'isinvorm') !== false) {
         </div>
         <link href="css/jquery.fullPage.min.css" rel="stylesheet"/>
         <link href="css/splitlayout.css" rel="stylesheet"/>
-        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
         <script src="js/jqueryui-1.10.4.min.js"></script>
         <script src="js/jquery.fullPage.min.js"></script>
         <script src="js/index.js"></script>

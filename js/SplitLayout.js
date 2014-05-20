@@ -10,10 +10,10 @@
  * http://www.codrops.com
  */
 $(document).ready(function() {
-    $('.back-left').on('click', function(ev) {close(ev);});
-    $('.back-right').on('click', function(ev) {close(ev);});
+    $('.back-left').click(function(ev) {close(ev);});
+    $('.back-right').click(function(ev) {close(ev);});
 
-    $('.side-left').on('click', function(ev) {
+    $('.side-left').click(function(ev) {
         if ($('.splitlayout').hasClass('open-left')) {
             close(ev);
         } else {
@@ -22,7 +22,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.side-right').on('click', function(ev) {
+    $('.side-right').click(function(ev) {
         if ($('.splitlayout').hasClass('open-right')) {
             close(ev);
         } else {
@@ -40,7 +40,7 @@ function reset() {
 function close(ev) {
     ev.preventDefault();
     ev.stopPropagation();
-    dir = $('.splitlayout').hasClass('open-right') ? 'right' : 'left';
+    var dir = $('.splitlayout').hasClass('open-right') ? 'right' : 'left';
     $('.splitlayout').removeClass('open-' + dir);
     $('.splitlayout').addClass('close-' + dir);
 }
